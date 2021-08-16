@@ -18,6 +18,8 @@ namespace ATMMachine
         }
     }
 
+    // multilevel Inheritance - Bank->ATM->Transaction
+    //multiple Inheritance - Transaction inherits ATM and IAccountInfo
     public class Transaction : ATM, IAccountInfo
     {
         public int TransactionID;
@@ -32,6 +34,7 @@ namespace ATMMachine
         }
     }
 
+    //Interface 
     interface IAccountInfo {
         public void getDetails();
     }

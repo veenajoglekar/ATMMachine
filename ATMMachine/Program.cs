@@ -48,6 +48,7 @@ namespace ATMMachine
           public void GetDetails()
         {
             Console.WriteLine("IFSC code is : {0}", getIFSCCode());
+            // Abstraction achieved by exposing a private base class attribute through a method (getIFSCCode)
         }
     }
     // Due to Account  being a sealed class it cannot be inherited by any other class
